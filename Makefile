@@ -4,7 +4,7 @@ HIPCC=$(HIP_PATH)/bin/hipcc
 MIOPEN_INSTALL_PATH=/opt/rocm/miopen
 INCLUDE_DIRS=-I$(HIP_PATH)/include -I$(ROCM_PATH)/include  -I$(MIOPEN_INSTALL_PATH)/include
 LD_FLAGS=-L$(ROCM_PATH)/lib  -L$(MIOPEN_INSTALL_PATH)/lib -lMIOpen   -lrocblas
-TARGET=--amdgpu-target=gfx906
+TARGET=--amdgpu-target=gfx900
 LAYER_TIMING=1
 
 #HIPCC_FLAGS=-g -Wall $(CXXFLAGS) $(TARGET) $(INCLUDE_DIRS)
